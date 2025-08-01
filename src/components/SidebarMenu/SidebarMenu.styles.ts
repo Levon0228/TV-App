@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const SidebarContainer = styled.div<{ $isOpen: boolean }>`
-  width: ${({ $isOpen }) => $isOpen ? '300px' : '100px'};
+  width: ${({ $isOpen }) => $isOpen ? '300px' : '80px'};
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   left: 0;
   top: 0;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   padding: ${({ $isOpen }) => $isOpen ? '20px 0' : '0'};
   z-index: 100;
   display: flex;

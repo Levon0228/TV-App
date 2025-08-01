@@ -29,13 +29,13 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const handleSetFeatured = (movie: typeof data.TendingNow[0]) => {
     sessionStorage.setItem('lastViewed', movie.Id);
     setFeatured(movie);
-    setHasSelectedItem(true); // Set to true when item is selected
+    setHasSelectedItem(true); 
   };
 
   const playVideo = (url: string | null) => {
     setCurrentVideo(url);
     if (url === null && featured.Id === data.Featured.Id) {
-      setHasSelectedItem(false); // Reset when video stops
+      setHasSelectedItem(false); 
     }
   };
 
